@@ -1,6 +1,6 @@
 .container {
   background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15)),
-    url("../../../assets/dogs.jpg") fixed;
+    url("../../../assets/dogs-min.jpg") fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,7 +19,7 @@
 @media (max-width: 700px) {
   .container {
     background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15)),
-      url("../../../assets/dog.jpg") fixed;
+      url("../../../assets/dog-min.jpg") fixed;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;

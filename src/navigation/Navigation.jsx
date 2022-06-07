@@ -11,9 +11,9 @@ export default function Navigation() {
    
     <Routes>
             <Route  path='/' element={<Home/>}/>
-            <Route path='Details/:dogName'  element={<Details/>} />
-            <Route path='Random'  element={<ImageRandom/>} />
-            <Route path='List'  element={<ListDog/>} />
+            <Route path='/Details/:dogName'  element={<Details/>} />
+            <Route path='/Random'  element={<ImageRandom/>} />
+            <Route path='/List'  element={<ListDog/>} />
     </Routes>
     
     </div>
