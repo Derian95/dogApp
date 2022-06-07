@@ -1,0 +1,15 @@
+.container{
+    min-height: 100vh;
+    background: url('../../../assets/black-dog.jpg') fixed;
+    background-position: bottom left;
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-color: rgba(8, 105, 185, 0.712);
+    padding-top: 20px;
+}
+
+@media (max-width:700px){
+    .container{
+        background-size: 100vh;
+    }
+}

@@ -1,0 +1,28 @@
+.container {
+  background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15)),
+    url("../../../assets/dogs.jpg") fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: bold;
+  font-size: 10rem;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .container {
+    background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15)),
+      url("../../../assets/dog.jpg") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+  }
+}
