@@ -1,6 +1,6 @@
 .container{
     min-height: 100vh;
-    background: url('../../../assets/black-dog.jpg') fixed;
+    background: url('../../../assets/black-dog.webp') fixed;
     background-position: bottom left;
     background-size:60%;
     background-repeat: no-repeat;

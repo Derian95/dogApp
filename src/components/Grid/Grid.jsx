@@ -2,7 +2,29 @@ import React,{useState,useEffect} from 'react'
 import { getAllDogs,  } from '../../api/dog'
 import Card from '../card/Card';
 import styles from './Grid.module.css'
+import { motion } from 'framer-motion';
 
+const container = {
+  show: {
+      opacity: 1,
+      transition: {
+          staggerChildren: 4.8,
+      },
+  },
+  hidden: {
+      opacity: 0
+  },
+};
+
+const children = {
+  show: {
+      opacity: 1
+  },
+  hidden: {
+      opacity: 0
+  }
+
+}
 
 export default function Grid() {
   const [dogsName, setDogsName] = useState([]);
@@ -24,15 +46,20 @@ export default function Grid() {
   
 
   return (
-    <div className={styles.container}
    
+    <motion.div className={styles.container}
+    variants={container}
+    initial='hidden'
+    animate='show'
     >
-      {Object.keys(dogsName).map((dog,idx) => {
+      {
+      Object.keys(dogsName).map((dog,idx) => {
             return (
-              <Card key={idx} name={dog} />
+              <Card key={idx} name={dog}  variants={children}/>
             )
   
           })}
-    </div>
+    </motion.div>
+
   )
 }
